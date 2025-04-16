@@ -1,7 +1,10 @@
-
-<nav class="nav-menu">
+<nav class="navbar">
+    <h3 class="navbar-title">{{ titre }}</h3>
     
-    @for (lien of menus; track $index) {
-    <a [routerLink]="lien.route" routerLinkActive="active" class="nav-link">{{lien.label}}</a>
-    }
+    <div class="nav-menu">
+      @for (lien of menus; track $index) {
+        <a [routerLink]="lien.route" routerLinkActive="active" class="nav-link">{{ lien.label }}</a>
+      }
+    </div>
 </nav>
+  

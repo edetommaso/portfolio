@@ -9,7 +9,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  titre='DE TOMMASO Eric';
   menus = [
-    { label: "Home",route:"/" },
+    { label: "Accueil",route:"/" },
+    { label: "Projets", route:"/projects" },
+    { label: "Contact", route:"/contact" },
+    { label: "A propos", route:"/about" },
+    { label: "CV", route:"/cv" }
   ];
 }
