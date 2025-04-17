@@ -1,4 +1,7 @@
+<h5>{{titre}}</h5>
+
 <div class="liste-carte">
+    
     @for (competence of competences; track $index) {
         <app-single-competence [competence]="competence"></app-single-competence>
     }

@@ -1,4 +1,12 @@
-<div class="carte">
-    <p class="nom">{{competence?.nom}}</p>
-    <img [src]="competence?.image" [alt]="competence?.nom" class="image">
-</div>
+<div class="carte-container">
+    <div class="carte" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+      <p class="nom">{{competence?.nom}}</p>
+      <img [src]="competence?.image" [alt]="competence?.nom" class="image">
+    </div>
+  
+    @if (afficherDescription) {
+      <div class="description-box">
+        <p class="description">{{competence?.description}}</p>
+      </div>
+    }
+  </div>

@@ -9,5 +9,19 @@ import { Competence } from '../../models/atttributs';
   styleUrl: './single-competence.component.css'
 })
 export class SingleCompetenceComponent {
-@Input() competence: Competence | null = null;
+  @Input() competence: Competence | null = null;
+  afficherDescription = false;
+  
+  montrerDescription() {
+    this.afficherDescription = !this.afficherDescription;
+  }
+
+  onMouseEnter() {
+    this.afficherDescription = true;
+  }
+
+  onMouseLeave() {
+    
+    this.afficherDescription = false;
+  }
 }
