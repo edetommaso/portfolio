@@ -4,7 +4,8 @@
     justify-content: space-between;
     background-color: grey;
     padding: 1%;
-    width: 100%;
+    width: auto;
+    
   }
   
   .navbar-title {
@@ -34,8 +35,13 @@
     font-weight: bold;
   }
   
+  
   .nav-link:hover {
     color: black;
     text-decoration: underline;
   }
   
+  .nav-link:hover:not(.active) {
+    color: black;
+    text-decoration: underline;
+  }

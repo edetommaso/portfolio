@@ -11,10 +11,10 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class NavbarComponent {
   titre='DE TOMMASO Eric';
   menus = [
-    { label: "Accueil",route:"/" },
-    { label: "Projets", route:"/projects" },
-    { label: "Contact", route:"/contact" },
-    { label: "A propos", route:"/about" },
-    { label: "CV", route:"/cv" }
+    { label: "Accueil",route:"" },
+    { label: "Projets", route:"projets" },
+    { label: "Contact", route:"contact" },
+    { label: "A propos", route:"about" },
+    { label: "CV", route:"cv" }
   ];
 }

@@ -1,0 +1,9 @@
+{
+    "breadcrumbs.showClasses": false,
+    "editor.suggest.showClasses": false,
+    "outline.showClasses": false,
+    "editor.hover.enabled": false,
+    "css.hover.documentation": false,
+    "scss.hover.documentation": false,
+    "html.hover.documentation": false
+}

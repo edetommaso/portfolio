@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { CompetencesComponent } from "../../components/competences/competences.component";
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [],
+  imports: [CompetencesComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })

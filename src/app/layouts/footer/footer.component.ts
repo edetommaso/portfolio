@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+  
+  année: number = new Date().getFullYear();
+  entreprise:string = "DE TOMMASO Eric";
+  info: string = `© ${this.année} ${this.entreprise}. Tous droits réservés.`;
 }
