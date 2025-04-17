@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Projet } from '../../models/atttributs';
 
 @Component({
   selector: 'app-list-projets',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './list-projets.component.css'
 })
 export class ListProjetsComponent {
+
+  @Input() projets: Projet[] = [];
+  @Input() titre: string = "";
 
 }
