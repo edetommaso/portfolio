@@ -31,6 +31,9 @@ export const projets: Projet[] = [
         description: [
             'Réalisation et conception d\'un jeu par groupe de 4.',
             'L\'objectif était de créer un jeu fonctionnel en Java (orienté Objet) avec une interface utilisateur agréable.',
+            'Le but du jeu est de ne pas mourir. Explorez les environnements , équipez-vous avec des armes de différents type tels qu\'une épee ou un arc afin de combattre les monstres'+
+            ' du donjon, utilisez les objets disponible permettant de soit améliorer votre personnage soit l\'affaiblir.'
+
         ],
         technologie: [competences.java,competences.javafx, competences.sceneBuilder, competences.tiled, competences.junit, competences.intellij, competences.trello, competences.github],
         image: [

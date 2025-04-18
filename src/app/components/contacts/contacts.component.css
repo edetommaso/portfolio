@@ -1,0 +1,9 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 95%;
+    height: fit-content;
+    padding: 1.5% 0%;
+}

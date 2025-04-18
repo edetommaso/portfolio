@@ -13,8 +13,10 @@ export class NavbarComponent {
   menus = [
     { label: "Accueil",route:"" },
     { label: "Projets", route:"projets" },
-    { label: "Contact", route:"contact" },
-    { label: "A propos", route:"about" },
-    { label: "CV", route:"cv" }
+    { label: "Contact", route:"contacts" },
+    { label: "A propos", route:"abouts" },
+    { label: "CV", route:"cv" },
+    { label: "Loisirs", route:"loisirs" }
+
   ];
 }

@@ -10,7 +10,7 @@ import { SingleCompetenceComponent } from '../single-competences/single-competen
   styleUrl: './list-competences.component.css'
 })
 export class ListCompetencesComponent {
-
+  
   @Input() competences: Competence[] = [];
   @Input() titre: string = "";
   

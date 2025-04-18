@@ -1,6 +1,6 @@
 <div class="liste-carte">   
     @for (projet of projets; track $index) {
-        <div class="projet-carte">
+        <div class="projet-carte" [routerLink]="['projet',$index]" routerLinkActive="active">
             <h3>{{ projet.nom }}</h3>
             
             <div class="description">

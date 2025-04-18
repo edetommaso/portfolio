@@ -10,7 +10,6 @@ import { ListProjetsComponent } from '../list-projets/list-projets.component';
   styleUrl: './projets.component.css'
 })
 export class ProjetsComponent {
-
   
   projets = projets;
 }
