@@ -184,6 +184,18 @@ export const maven: Competence = {
     image: '/assets/competences/maven.png'
 };
 
+export const apache: Competence = {
+    nom: 'Apache',
+    description: 'Serveur d\'applications.',
+    image: '/assets/competences/apache.png'
+};
+
+export const phpmyadmin: Competence = {
+    nom: 'PhpMyAdmin',
+    description: 'Outil de gestion de bases de données MySQL via une interface web.',
+    image: '/assets/competences/phpmyadmin.png'
+};
+
 // IDEs
 export const vscode: Competence = {
     nom: 'Visual Studio Code',
@@ -243,7 +255,7 @@ export const frameworks: Competence[] = [
 ];
 
 export const technologies: Competence[] = [
-    postgresql, mysql, git, github, docker, figma, postman, mongodb, trello, tiled, sceneBuilder, maven
+    postgresql, mysql,phpmyadmin, git, github, docker, figma, postman, mongodb, trello, tiled, sceneBuilder, maven, apache
 ];
 
 export const ide: Competence[] = [

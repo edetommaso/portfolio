@@ -11,7 +11,7 @@ import { langages,frameworks,ide,os,technologies } from '../../models/competence
   styleUrl: './competences.component.css'
 })
 export class CompetencesComponent {
-  languages: Competence[] = langages;
+  langages: Competence[] = langages;
   frameworks: Competence[] = frameworks;
   ide: Competence[] = ide;
   os: Competence[] = os;

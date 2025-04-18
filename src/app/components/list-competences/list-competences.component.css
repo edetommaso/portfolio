@@ -1,11 +1,14 @@
 .liste-carte {
     display: flex;
     flex-wrap: wrap;
-    margin:auto ;
+    margin:auto;
     gap: 0.7em;
-    width: 80%;
+    width: auto;
     justify-content: center;
 }
+
+
+
 h5 {
     color: whitesmoke;
     font-size: 1em;
