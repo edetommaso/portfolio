@@ -12,7 +12,7 @@ export interface Hobbie {
 
 export interface Projet {
     nom: string;
-    technologie: string;
+    technologie: Competence[];
     description: string[];
     image: string[];
 }

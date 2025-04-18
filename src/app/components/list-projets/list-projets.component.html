@@ -1,9 +1,23 @@
-<h5>{{titre}}</h5>
-
-<div class="liste-carte">
-    
-    @for (competence of competences; track $index) {
-        <app-single-competence [competence]="competence"></app-single-competence>
+<div class="liste-carte">   
+    @for (projet of projets; track $index) {
+        <div class="projet-carte">
+            <h3>{{ projet.nom }}</h3>
+            
+            <div class="description">
+                <p>{{ projet.description[0] }}</p>
+                
+            </div>
+            
+            @if (projet.image.length) {
+                <img [src]="projet.image[0]" [alt]="'Illustration ' + projet.nom" class="image">
+            }
+            
+            @if (projet.technologie.length) {
+                <app-list-competences 
+                    [competences]="projet.technologie" 
+                    titre="Technologies utilisées">
+                </app-list-competences>
+            }
+        </div>
     }
-
 </div>

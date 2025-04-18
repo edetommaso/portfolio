@@ -1,0 +1,8 @@
+.projets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 90%; /* Augmenté pour mieux utiliser l'espace */
+    padding: 1.5% 0%;
+}
