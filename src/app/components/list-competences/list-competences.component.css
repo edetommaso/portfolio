@@ -1,23 +1,21 @@
 .liste-carte {
     display: flex;
     flex-wrap: wrap;
-    gap: 1%;
-    width: 75%;
-    margin: auto;
+    margin:auto ;
+    gap: 0.7em;
+    width: 80%;
     justify-content: center;
 }
 h5 {
     color: whitesmoke;
     font-size: 1em;
-    padding-bottom: 10px;
     text-align: center;
 }
 @media (max-width: 768px) {
-
+    
     .liste-carte {
         align-items: center;
-        gap: 0.5%;
+        gap: 0.5em;
         justify-content: center;
     }
-    
 }

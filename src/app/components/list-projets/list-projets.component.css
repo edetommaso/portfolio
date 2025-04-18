@@ -11,18 +11,15 @@
     background: rgba(255, 255, 255, 0.1);
     text-align: center;
     border-radius: 25px;
-    padding: 1.5em;
-    margin-bottom: 1.5rem;
-    width: 45%; /* 48% pour 2 cartes + 2% de gap = 100% */
-    box-sizing: border-box; /* Important pour inclure padding dans la largeur */
+    padding: 1em;
+    width: 48%;
+    box-sizing: border-box;
     transition: transform 0.3s ease;
-    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Le reste de votre style existant reste inchangé */
 .projet-carte:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
 }
 
 .projet-carte h3 {
@@ -38,17 +35,17 @@
 }
 
 .image {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
-    margin: 1rem 0;
     border-radius: 8px;
     overflow: hidden;
+    margin: auto;
+    color: red;
+    text-align: center;
 }
 
-.image img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+.image p {
+    color: red;
 }
 
 h5 {
@@ -59,6 +56,8 @@ h5 {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
+
+
 
 /* Media Query pour mobile */
 @media (max-width: 768px) {

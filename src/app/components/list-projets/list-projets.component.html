@@ -9,14 +9,15 @@
             </div>
             
             @if (projet.image.length) {
-                <img [src]="projet.image[0]" [alt]="'Illustration ' + projet.nom" class="image">
+                <img [src]="projet.image[0]" class="image">
+            }@else{
+                <p class="image">Aucune image disponible</p>
             }
             
             @if (projet.technologie.length) {
-                <app-list-competences 
-                    [competences]="projet.technologie" 
-                    titre="Technologies utilisées">
-                </app-list-competences>
+                <app-list-competences [competences]="projet.technologie" titre="Technologies utilisées" class="technologies"></app-list-competences>
+            }@else {
+                <p class="technologies">Aucune technologie utilisée</p>
             }
         </div>
     }

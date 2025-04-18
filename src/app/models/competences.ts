@@ -37,6 +37,12 @@ export const flask: Competence = {
     image: '/assets/competences/flask.png'
 };
 
+export const mockito: Competence = {
+    nom: 'Mockito',
+    description: 'Framework de test pour Java, utilisé pour créer des objets fictifs.',
+    image: '/assets/competences/mockito.png'
+};
+
 // Langages
 export const html: Competence = {
     nom: 'HTML',
@@ -160,6 +166,24 @@ export const trello: Competence = {
     image: '/assets/competences/trello.png'
 };
 
+export const tiled: Competence = {
+    nom: 'Tiled',
+    description: 'Éditeur de cartes 2D pour jeux vidéo.',
+    image: '/assets/competences/tiled.png'
+};
+
+export const sceneBuilder: Competence = {
+    nom: 'Scene Builder',
+    description: 'Outil de conception d\'interfaces JavaFX.',
+    image: '/assets/competences/scene_builder.png'
+};
+
+export const maven: Competence = {
+    nom: 'Maven',
+    description: 'Outil de gestion de projet et d\'automatisation pour Java.',
+    image: '/assets/competences/maven.png'
+};
+
 // IDEs
 export const vscode: Competence = {
     nom: 'Visual Studio Code',
@@ -215,11 +239,11 @@ export const langages: Competence[] = [
 ];
 
 export const frameworks: Competence[] = [
-    angular, nodejs, flutter, flask, javafx, junit
+    angular, nodejs, flutter, flask, javafx, junit , mockito
 ];
 
 export const technologies: Competence[] = [
-    postgresql, mysql, git, github, docker, figma, postman, mongodb, trello
+    postgresql, mysql, git, github, docker, figma, postman, mongodb, trello, tiled, sceneBuilder, maven
 ];
 
 export const ide: Competence[] = [
