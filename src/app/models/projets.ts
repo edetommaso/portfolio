@@ -41,6 +41,31 @@ export const projets: Projet[] = [
             '/assets/projets/3/zelda-1.png',
             '/assets/projets/3/zelda-2.png',
         ]
+    },
+    {
+        nom: 'Création d\'un jeu Cliker',
+        description: [
+            'Réalisation et conception d\'un jeu mobile par groupe de 3.',
+            'L\'objectif était de créer un jeu fonctionnel en Flutter avec utilisation de base de données gérer par une liaison à une API.',
+            'Le but du jeu est de cliquer sur un bouton pour gagner des points, puis de les dépenser pour acheter des améliorations.'
+            +'Le jeu s\'arrête lorsque le joueur a atteint un certain nombre de points.'
+        ],
+        technologie: [competences.flutter, competences.mysql,competences.php, competences.vscode, competences.trello],
+        image: [
+            '/assets/projets/2/clicker.png',
+            '/assets/projets/2/clicker-1.png',
+            '/assets/projets/2/clicker-2.png',
+        ]
+    },
+
+    {
+        nom: 'Création d\'un site web',
+        description: [
+            'Conception d\'un site web à partir des besoins clients.',
+            'Reprise d\'un existant à améliorer visuellement.'
+        ],
+        technologie: [competences.html, competences.css,competences.vscode, competences.trello],
+        image: []
     }
 
 ];

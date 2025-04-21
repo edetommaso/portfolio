@@ -3,7 +3,7 @@
     
     <div class="nav-menu">
       @for (lien of menus; track $index) {
-        <a [routerLink]="lien.route" routerLinkActive="active" class="nav-link">{{ lien.label }}</a>
+        <a [routerLink]="lien.route" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">{{ lien.label }}</a>
       }
     </div>
 </nav>

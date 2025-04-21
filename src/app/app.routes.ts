@@ -11,13 +11,13 @@ export const routes: Routes = [
         path: "", component: HomePageComponent
     },
     {
-        path: "projets", component: ProjetsPageComponent
+        path: "projet", component: ProjetsPageComponent
     },
     {
         path: "projet/:number", component: SingleProjetComponent
     },
     {
-        path: "contacts", component: ContactPageComponent
+        path: "contact", component: ContactPageComponent
     },
     {
         path: "404", component: NotFoundPageComponent

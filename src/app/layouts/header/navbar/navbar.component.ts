@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -11,12 +10,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class NavbarComponent {
   titre='DE TOMMASO Eric';
   menus = [
+    
     { label: "Accueil",route:"" },
-    { label: "Projets", route:"projets" },
-    { label: "Contact", route:"contacts" },
-    { label: "A propos", route:"abouts" },
+    { label: "Projets", route:"projet" },
+    { label: "Contact", route:"contact" },
+    { label: "A propos", route:"about" },
     { label: "CV", route:"cv" },
-    { label: "Loisirs", route:"loisirs" }
-
+    { label: "Loisirs", route:"loisir" }
+    
   ];
 }

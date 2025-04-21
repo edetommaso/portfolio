@@ -8,7 +8,7 @@ export const github: Contact = {
 
 export const linkedin: Contact = {
     nom: "LinkedIn",
-    lien: "https://www.linkedin.com/in/tommaso-edet-0b1a1b1a4/",
+    lien: "https://www.linkedin.com/in/eric-de-tommaso/",
     image: "assets/contacts/linkedin.png"
 };
 

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-
+import { InformationComponent } from './information/information.component';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [InformationComponent],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })
