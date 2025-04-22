@@ -5,25 +5,34 @@
             <p>Date : {{projet.date}} , Durée du projet : {{projet.duree}}</p>
         </div>
         @for (i of projet.description.keys(); track i) {
+
             <div class="description">
                 <p>{{ projet.description[i] }}</p>
             </div>
             
             @if (projet.image[i]) {
                 <img [src]="projet.image[i]" class="image" alt="Image {{ i + 1 }}">
-            } @else {
-                <p class="image">Aucune image disponible</p>
             }
         }
-
+        
+        @if (projet.video) {
+            <div class="video-container">
+                <video controls muted class="project-video" (mouseover)="showOverlay = true" (mouseout)="showOverlay = false">
+                    <source [src]="projet.video" type="video/mp4">
+                    Votre navigateur ne supporte pas les vidéos HTML5.
+                </video>
+                @if (showOverlay) {
+                    <div class="video-overlay">Démo du projet</div>
+                }
+            </div>
+        }
+        
         @if (projet.technologie.length) {
             <app-list-competences 
               [competences]="projet.technologie" 
               titre="Technologies utilisées durant ce projet" 
               class="technologies">
             </app-list-competences>
-        } @else {
-            <p class="technologies">Aucune technologie utilisée </p>
         }
     </div>
 } @else {

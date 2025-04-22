@@ -17,6 +17,7 @@ export interface Projet {
     technologie: Competence[];
     description: string[];
     image: string[];
+    video: string;
 }
 
 export interface Experience {

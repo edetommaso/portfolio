@@ -13,6 +13,7 @@ import { ListCompetencesComponent } from '../list-competences/list-competences.c
 })
 export class SingleProjetComponent implements OnInit {
   projet: Projet | undefined = undefined;
+  showOverlay: boolean = false;
   
   constructor(
     private route: ActivatedRoute,
