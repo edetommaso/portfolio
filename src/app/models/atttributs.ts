@@ -12,6 +12,8 @@ export interface Hobbie {
 
 export interface Projet {
     nom: string;
+    date: string;
+    duree: string;
     technologie: Competence[];
     description: string[];
     image: string[];

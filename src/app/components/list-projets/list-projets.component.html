@@ -2,7 +2,9 @@
     @for (projet of projets; track $index) {
         <div class="projet-carte" [routerLink]="['/projet',$index]" routerLinkActive="active">
             <h3>{{ projet.nom }}</h3>
-            
+            <div class="info">
+                <p>Date : {{projet.date}} | Durée du projet : {{projet.duree}} </p>
+            </div>
             <div class="description">
                 <p>{{ projet.description[0] }}</p>
                 

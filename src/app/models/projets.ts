@@ -15,7 +15,9 @@ export const projets: Projet[] = [
             '/assets/projets/1/tetris.png',
             '/assets/projets/1/tetris-1.png',
             '/assets/projets/1/tetris-2.png',
-        ]
+        ],
+        date: 'Novembre 2023',
+        duree: '2 mois',
     },
     {
         nom: 'Création d\'un site web',
@@ -24,7 +26,9 @@ export const projets: Projet[] = [
             'Reprise d\'un existant à améliorer visuellement.'
         ],
         technologie: [competences.html, competences.css,competences.vscode, competences.trello],
-        image: []
+        image: [],
+        date: 'Octobre 2023',
+        duree: '1 mois'
     },
     {
         nom: 'Conception d\'un jeu 2D type Zelda-like',
@@ -40,7 +44,9 @@ export const projets: Projet[] = [
             '/assets/projets/3/zelda.png',
             '/assets/projets/3/zelda-1.png',
             '/assets/projets/3/zelda-2.png',
-        ]
+        ],
+        date: 'Mars 2024',
+        duree: '3 mois'
     },
     {
         nom: 'Création d\'un jeu Cliker',
@@ -55,9 +61,11 @@ export const projets: Projet[] = [
             '/assets/projets/2/clicker.png',
             '/assets/projets/2/clicker-1.png',
             '/assets/projets/2/clicker-2.png',
-        ]
+        ],
+        date: 'Fevrier 2025',
+        duree: '1 mois'
     },
-
+    
     {
         nom: 'Création d\'un site web',
         description: [
@@ -65,7 +73,11 @@ export const projets: Projet[] = [
             'Reprise d\'un existant à améliorer visuellement.'
         ],
         technologie: [competences.html, competences.css,competences.vscode, competences.trello],
-        image: []
+        image: [
+        
+        ],
+        date: 'Mars 2025',
+        duree: '1 mois'
     }
 
 ];

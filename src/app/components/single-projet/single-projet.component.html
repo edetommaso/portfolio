@@ -1,12 +1,14 @@
 @if (projet) {
     <div class="projet-carte">
         <h3>{{ projet.nom }}</h3>
-
+        <div class="info">
+            <p>Date : {{projet.date}} , Durée du projet : {{projet.duree}}</p>
+        </div>
         @for (i of projet.description.keys(); track i) {
             <div class="description">
                 <p>{{ projet.description[i] }}</p>
             </div>
-
+            
             @if (projet.image[i]) {
                 <img [src]="projet.image[i]" class="image" alt="Image {{ i + 1 }}">
             } @else {
