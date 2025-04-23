@@ -10,13 +10,13 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--current-border);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 70px;
     height: 90px;
     text-align: center;
-    background: #333;
+    background: var(--current-alt-bg);
     cursor: pointer;
     transition: transform 0.3s ease;
     z-index: 1;
@@ -29,7 +29,6 @@
   .nom {
     font-size: 0.7em;
     font-weight: bold;
-    color: whitesmoke;
   }
   
   .image {
@@ -43,11 +42,11 @@
     bottom: calc(100% + 0.7em);
     left: 0;
     width: auto;
-    background: #444;
-    color: whitesmoke;
+    background: var(--current-bg);
+    color: var(--current-text);
     padding: 8px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px var(--current-border);
     z-index: 10;
   }
   

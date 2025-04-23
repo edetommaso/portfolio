@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #2f2f2f;
+  background-color: var(--current-alt-bg);
   padding: 1rem 2rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   position: sticky;
@@ -12,7 +12,7 @@
 
 .navbar-title {
   margin: 0;
-  color: white;
+  color: var(--current-text-color);
   font-size: 1.5rem;
   font-weight: bold;
   white-space: nowrap;
@@ -28,7 +28,7 @@
 
 .nav-link {
   position: relative;
-  color: white;
+  color: var(--current-text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -42,12 +42,12 @@
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: white;
+  background-color: var(--primary-color);
   transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #e0e0e0;
+  color: var(--primary-color);
 }
 
 .nav-link:hover::after {

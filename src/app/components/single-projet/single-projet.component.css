@@ -1,6 +1,6 @@
 
 .projet-carte {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--current-alt-bg);
     text-align: center;
     border-radius: 25px;
     padding: 1em;
@@ -8,18 +8,17 @@
     width: 90%;
     box-sizing: border-box;
     transition: transform 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--current-border);
 }
 
 
 .projet-carte h3 {
-    color: whitesmoke;
+    
     margin-top: 0;
     font-size: 1.2em;
 }
 
 .description p {
-    color: rgba(245, 245, 245, 0.8);
     line-height: 1.5;
     font-size: 0.9em;
 }
@@ -30,8 +29,6 @@
     border-radius: 8px;
     overflow: hidden;
     margin: auto;
-    color: red;
-    text-align: center;
 }
 
 

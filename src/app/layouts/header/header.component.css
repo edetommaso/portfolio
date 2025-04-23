@@ -1,7 +1,19 @@
+/*
+header {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4em;
+    padding: 2.5%;
+    z-index: 1000;
+}
+*/
+
 header {
     width: auto;
     padding: 2.5%;
     height: 4em;
 
 }
-
