@@ -1,6 +1,6 @@
 body {
-    background-color: var(--background-dark);
-    color: var(--text-dark);
+    background-color: var(--current-bg);
+    color: var(--current-text);
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
@@ -14,8 +14,6 @@ html, body {
 }
 
 body.light-theme {
-    background-color: var(--background-light);
-    color: var(--text-light);
     --current-bg: var(--background-light);
     --current-alt-bg: var(--alternative-background-light);
     --current-text: var(--text-light);
@@ -24,8 +22,6 @@ body.light-theme {
   }
   
   body.dark-theme {
-    background-color: var(--background-dark);
-    color: var(--text-dark);
     --current-bg: var(--background-dark);
     --current-alt-bg: var(--alternative-background-dark);
     --current-text: var(--text-dark);

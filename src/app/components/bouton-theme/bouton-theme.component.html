@@ -1,3 +1,4 @@
-<button (click)="toggleTheme()" class="theme-toggle" aria-label="Changer de thème">
-    {{ isDarkMode ? '☀️' : '🌙' }}
-</button>
+<button (click)="toggleTheme()" class="theme-toggle">
+    <img [src]="isDarkMode ? 'assets/bouton-theme/soleil.png' : 'assets/bouton-theme/lune.png'"
+         [alt]="isDarkMode ? 'Passer en mode clair' : 'Passer en mode sombre'">
+  </button>

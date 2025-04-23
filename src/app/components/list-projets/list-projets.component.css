@@ -4,15 +4,15 @@
     justify-content: space-between;
     width: 100%;
     margin: auto;
-    gap: 2rem; /* Espacement vertical et horizontal */
+    gap: 2rem;
 }
 
 .projet-carte {
     background: var(--current-alt-bg);
     text-align: center;
-    border: 1px solid var(--current-border);
+    border: 2px solid var(--current-border);
     border-radius: 25px;
-    padding: 1em;
+    padding: 1.2em;
     width: 48%;
     box-sizing: border-box;
     transition: transform 0.3s ease;
@@ -58,11 +58,11 @@ h5 {
 @media (max-width: 768px) {
     .liste-carte {
         width: 95%;
-        gap: 1rem; /* Espacement plus important sur mobile */
+        gap: 1rem;
     }
     
     .projet-carte {
-        width: 100%; /* Une carte par ligne sur mobile */
-        padding: 1.2rem;
+        width: 100%;
+        padding: 1rem;
     }
 }
