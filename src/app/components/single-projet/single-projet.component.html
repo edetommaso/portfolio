@@ -5,7 +5,7 @@
             <p>Date : {{projet.date}} , Durée du projet : {{projet.duree}}</p>
         </div>
         @for (i of projet.description.keys(); track i) {
-
+            
             <div class="description">
                 <p>{{ projet.description[i] }}</p>
             </div>
@@ -16,14 +16,24 @@
         }
         
         @if (projet.video) {
-            <div class="video-container">
-                <video controls muted class="project-video" (mouseover)="showOverlay = true" (mouseout)="showOverlay = false">
+            
+            <div class="video-container" (click)="toggleVideo()" (mouseover)="showOverlay = true" (mouseout)="showOverlay = false">
+                <video #videoPlayer class="project-video">
                     <source [src]="projet.video" type="video/mp4">
                     Votre navigateur ne supporte pas les vidéos HTML5.
                 </video>
                 @if (showOverlay) {
-                    <div class="video-overlay">Démo du projet</div>
-                }
+                <div class="video-overlay" >
+                    
+                    <div class="lecture">
+                        <div class="overlay-text">
+                            {{ isPlaying ? 'Mettre en pause la démo' : 'Lire la démo' }}
+                        </div>
+                        <span class="play-icon">{{ isPlaying ? '⏸' : '▶' }}</span>
+                    </div>
+                    
+                </div>
+            }
             </div>
         }
         

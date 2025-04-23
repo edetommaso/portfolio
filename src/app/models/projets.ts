@@ -77,7 +77,7 @@ export const projets: Projet[] = [
             "CRUD complet avec : modification en ligne des fiches d'œuvres, validation des champs, et historique des changements. Exemple : correction des descriptions d'œuvres directement dans le tableau.",
             "Fonctionnalités d'export CSV des données filtrées (par exposition, période, etc.)."
         ],
-        technologie: [competences.python, competences.flask, competences.angular, competences.typescript, competences.html, competences.css,competences.vscode, competences.pycharm, competences.trello, competences.github],
+        technologie: [competences.python, competences.flask, competences.angular, competences.typescript, competences.html, competences.css,competences.phpmyadmin, competences.mysql, competences.vscode, competences.pycharm, competences.trello, competences.github],
         image: [
             '/assets/projets/5/musee.png',
             '/assets/projets/5/musee-1.png',
