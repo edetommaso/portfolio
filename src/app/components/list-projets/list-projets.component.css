@@ -8,7 +8,7 @@
 }
 
 .projet-carte {
-    background: var(--current-alt-bg);
+    background: var(--diagonal-gradient);
     text-align: center;
     border: 2px solid var(--current-border);
     border-radius: 25px;

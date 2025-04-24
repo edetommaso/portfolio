@@ -16,7 +16,7 @@
     width: 70px;
     height: 90px;
     text-align: center;
-    background: var(--current-alt-bg);
+    background: var(--diagonal-gradient-reverse);
     cursor: pointer;
     transition: transform 0.3s ease;
     z-index: 1;
