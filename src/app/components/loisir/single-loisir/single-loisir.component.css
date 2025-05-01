@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     width: 90%; /* Prend la moitié de la largeur */
-    height: 350px; /* Taille fixe pour la hauteur */
-    align-items: center;
+    height: auto; /* Taille fixe pour la hauteur */
     border-radius: 20px;
+    align-items: center;
     margin: 1em auto; /* Centré avec un espacement */
     position: relative; /* Nécessaire pour positionner le texte */
     overflow: hidden; /* Cache les débordements */
@@ -12,13 +12,14 @@
 
 .loisir img {
     width: 100%;
-    border-radius: 10px;
     object-fit: cover;
-    transition: 0.3s ease; /* Transition pour l'effet de survol */
+    border-radius: 20px;
+    transition: 0.5s ease; /* Transition pour l'effet de survol */
 }
 
 .loisir:hover img {
     filter: brightness(50%); /* Assombrit l'image au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
 }
 
 .loisir .text-overlay {
@@ -28,6 +29,7 @@
     transform: translate(-50%, -50%);
     color: white;
     font-size: 1.5rem;
+    border-radius: 20px;
     font-weight: bold;
     text-align: center;
     opacity: 0; /* Caché par défaut */
@@ -40,7 +42,8 @@
 
 @media (max-width: 768px) {
     .loisir {
-        height: 300px; /* Ajustement de la hauteur */
+        width: 90%;
+        max-height: 300px; /* Ajustement de la hauteur */
     }
 
     .loisir .text-overlay {
@@ -50,6 +53,7 @@
         transform: translate(-50%, -50%);
         color: white;
         font-size: 1.5rem;
+        border-radius: 20px;
         font-weight: bold;
         text-align: center;
         opacity: 0; /* Caché par défaut */

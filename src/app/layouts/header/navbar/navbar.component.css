@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  flex-wrap: wrap;
 }
 
 .navbar-title {
@@ -63,3 +64,50 @@
   width: 100%;
   background-color: #ffd700;
 }
+
+.menu-toggle {
+  display: none; /* caché par défaut */
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Espace entre les boutons */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .navbar-title {
+    align-self: flex-start;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+  
+  
+  
+}
+

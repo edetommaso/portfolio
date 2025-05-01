@@ -3,13 +3,10 @@
     border: none;
     padding: 0;
     cursor: pointer;
-    margin: auto;
   }
   
   .theme-toggle img {
     padding-top: 0.4em;
-    padding: auto;
-    margin: auto;
     width: 2.5em;
     transition: transform 0.5s;
   }

@@ -23,10 +23,17 @@ export const boxeAnglaise: Loisir = {
     image: "assets/loisirs/boxe_anglaise.webp"
 };
 
+export const mma : Loisir = {
+    nom: "MMA",
+    image: "assets/loisirs/mma.webp"
+};
+
+
+
 
 
 
 
 export const loisirs: Loisir[] = [
-    basketball,football,tennis,footballAmericain,boxeAnglaise
+    basketball,football,tennis,footballAmericain,boxeAnglaise,mma
 ];

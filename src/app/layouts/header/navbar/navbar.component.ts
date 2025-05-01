@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { BoutonThemeComponent } from '../../../components/bouton-theme/bouton-theme.component';
-
+import { BoutonBurgerComponent } from '../../../components/bouton-burger/bouton-burger.component';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, BoutonThemeComponent],
+  imports: [RouterLink, RouterLinkActive, BoutonThemeComponent,BoutonBurgerComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  menuOuvert = false;
+
   titre='DE TOMMASO Eric';
   menus = [
     
@@ -21,4 +23,8 @@ export class NavbarComponent {
     { label: "Loisirs", route:"loisir" }
     
   ];
+
+  toggleMenu() {
+    this.menuOuvert = !this.menuOuvert;
+  }  
 }
