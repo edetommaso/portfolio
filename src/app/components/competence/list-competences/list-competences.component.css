@@ -1,0 +1,23 @@
+.liste-carte {
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    gap: 0.7em;
+    width: auto;
+    justify-content: center;
+}
+
+h5 {
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+    padding: 0.8em 0;
+}
+@media (max-width: 768px) {
+    
+    .liste-carte {
+        align-items: center;
+        gap: 0.5em;
+        justify-content: center;
+    }
+}

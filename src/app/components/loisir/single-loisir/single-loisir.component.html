@@ -1,0 +1,7 @@
+<div class="loisir">
+    <!--<p class="nom">{{loisir?.nom}}</p>-->
+    @if (loisir?.image ){
+        <img [src]="loisir?.image"/>
+    }
+    <p class="text-overlay">{{ loisir?.nom }}</p>
+</div>

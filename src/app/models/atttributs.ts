@@ -4,9 +4,8 @@ export interface Competence {
     image: string;
 }
 
-export interface Hobbie {
+export interface Loisir {
     nom: string;
-    description: string;
     image: string;
 }
 
@@ -27,6 +26,7 @@ export interface Experience {
     localisation: string;
     description: string;
 }
+
 export interface Formation {
     nom: string;
     date: string;
