@@ -16,6 +16,7 @@ export const email: Contact = {
     nom: "Email",
     lien: "mailto:eric.detommaso@gmail.com",
     image: "assets/contacts/email.png"
+    
 };
 
 export const telephone: Contact = {
