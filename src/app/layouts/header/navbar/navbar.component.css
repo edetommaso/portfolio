@@ -75,7 +75,7 @@
   gap: 1rem; /* Espace entre les boutons */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px),(max-width: 1080px) {
   .navbar {
     flex-direction: column;
     align-items: stretch;
@@ -91,17 +91,22 @@
   }
   
   .nav-menu {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.8s ease, opacity 0.5s ease;
     flex-direction: column;
     width: 100%;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 0;
   }
-
+  
   .nav-menu.show {
-    display: flex;
+    max-height: 500px;
+    opacity: 1;
+    padding: 0.5rem 0;
   }
-
+  
   .nav-link {
     padding: 0.5rem 1rem;
     width: 100%;

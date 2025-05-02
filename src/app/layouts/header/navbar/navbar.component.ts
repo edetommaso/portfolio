@@ -19,12 +19,9 @@ export class NavbarComponent {
     { label: "Projets", route:"projet" },
     { label: "Contact", route:"contact" },
     { label: "A propos", route:"about" },
-    { label: "CV", route:"cv" },
     { label: "Loisirs", route:"loisir" }
     
   ];
-
-  toggleMenu() {
-    this.menuOuvert = !this.menuOuvert;
-  }  
+  
+  
 }

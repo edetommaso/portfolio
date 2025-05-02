@@ -16,11 +16,10 @@
   </div>
 
   <div class="navbar-actions">
-    <app-bouton-burger (toggle)="menuOuvert = !menuOuvert" class="menu-toggle"></app-bouton-burger>
+    <app-bouton-burger (toggle)="menuOuvert = !menuOuvert" class="menu-toggle" [class.active]="menuOuvert"></app-bouton-burger>
     <app-bouton-theme />
   </div>
   
-   
-   
+  
 
 </nav>
