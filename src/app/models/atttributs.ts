@@ -26,8 +26,6 @@ export interface APropos {
     localisation: string;
     photo: string | null;
     description: string;
-    etudes: Formation[];
-    experiences: Experience[];
 }
 
 export interface Experience {

@@ -18,7 +18,7 @@ export class NavbarComponent {
     { label: "Accueil",route:"" },
     { label: "Projets", route:"projet" },
     { label: "Contact", route:"contact" },
-    { label: "À propos", route:"about" },
+    { label: " propos", route:"about" },
     { label: "Loisirs", route:"loisir" }
     
   ];
