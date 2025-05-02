@@ -5,7 +5,7 @@ import { ProjetsPageComponent } from './pages/projets-page/projets-page.componen
 import { SingleProjetComponent } from './components/projet/single-projet/single-projet.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { LoisirPageComponent } from './pages/loisir-page/loisir-page.component';
-
+import { AProposComponent } from './components/aPropos/apropos/apropos.component';
 export const routes: Routes = [
 
     { 
@@ -22,6 +22,9 @@ export const routes: Routes = [
     },
     {
         path: "loisir", component: LoisirPageComponent
+    },
+    {
+        path: "about", component: AProposComponent
     },
     {
         path: "404", component: NotFoundPageComponent

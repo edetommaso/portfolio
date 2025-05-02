@@ -12,7 +12,19 @@ export const linkedin: Contact = {
     image: "assets/contacts/linkedin.png"
 };
 
+export const email: Contact = {
+    nom: "Email",
+    lien: "mailto:eric.detommaso@gmail.com",
+    image: "assets/contacts/email.png"
+};
+
+export const telephone: Contact = {
+    nom: "Téléphone",
+    lien: "tel:+33614292372",
+    image: "assets/contacts/telephone.png"
+};
+
 export const contacts: Contact[] = [
-    github,linkedin
+    github,linkedin,email,telephone
 ];
 

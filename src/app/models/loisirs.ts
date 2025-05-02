@@ -28,12 +28,6 @@ export const mma : Loisir = {
     image: "assets/loisirs/mma.webp"
 };
 
-
-
-
-
-
-
 export const loisirs: Loisir[] = [
     basketball,football,tennis,footballAmericain,boxeAnglaise,mma
 ];

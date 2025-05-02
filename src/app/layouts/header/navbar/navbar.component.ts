@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { BoutonThemeComponent } from '../../../components/bouton-theme/bouton-theme.component';
-import { BoutonBurgerComponent } from '../../../components/bouton-burger/bouton-burger.component';
+import { BoutonThemeComponent } from '../../../components/bouton/bouton-theme/bouton-theme.component';
+import { BoutonBurgerComponent } from '../../../components/bouton/bouton-burger/bouton-burger.component';
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -18,7 +18,7 @@ export class NavbarComponent {
     { label: "Accueil",route:"" },
     { label: "Projets", route:"projet" },
     { label: "Contact", route:"contact" },
-    { label: "A propos", route:"about" },
+    { label: "À propos", route:"about" },
     { label: "Loisirs", route:"loisir" }
     
   ];

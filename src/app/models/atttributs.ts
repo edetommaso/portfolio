@@ -19,17 +19,30 @@ export interface Projet {
     video: string;
 }
 
+export interface APropos {
+    nom: string;
+    prenom: string;
+    age: number;
+    localisation: string;
+    photo: string | null;
+    description: string;
+    etudes: Formation[];
+    experiences: Experience[];
+}
+
 export interface Experience {
     poste: string;
-    date: string;
+    dateDebut: string;
+    dateFin: string | null;
     entreprise: string;
     localisation: string;
-    description: string;
+    descriptionPoste: string;
 }
 
 export interface Formation {
     nom: string;
-    date: string;
+    dateDebut: string;
+    dateFin: string | null;
     etablissement: string;
     localisation: string;
     description: string;

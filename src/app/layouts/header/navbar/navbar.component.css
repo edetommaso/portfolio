@@ -56,13 +56,19 @@
 }
 
 .nav-link.active {
+  color: var(--secondary-color);
+  /*
   color: #ffd700;
+  */
   font-weight: bold;
 }
 
 .nav-link.active::after {
   width: 100%;
+  background-color: var(--secondary-color);
+  /*
   background-color: #ffd700;
+  */
 }
 
 .menu-toggle {

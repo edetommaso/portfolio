@@ -123,6 +123,12 @@ export const postgresql: Competence = {
     image: '/assets/competences/postgresql.png'
 };
 
+export const mongodb: Competence = {
+    nom: 'MongoDB',
+    description: 'Base de données NoSQL orientée documents.',
+    image: '/assets/competences/mongodb.png'
+};
+
 // Outils
 export const git: Competence = {
     nom: 'Git',
@@ -152,12 +158,6 @@ export const postman: Competence = {
     nom: 'Postman',
     description: 'Outil pour tester les API.',
     image: '/assets/competences/postman.webp'
-};
-
-export const mongodb: Competence = {
-    nom: 'MongoDB',
-    description: 'Base de données NoSQL orientée documents.',
-    image: '/assets/competences/mongodb.png'
 };
 
 export const trello: Competence = {
