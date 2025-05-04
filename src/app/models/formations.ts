@@ -28,5 +28,5 @@ export const but:Formation = {
 };
 
 export const formations: Formation[] = [
-    bac,bts,but
+    but,bts,bac
 ];

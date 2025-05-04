@@ -1,7 +1,7 @@
 .carte-container {
     position: relative;
     display: inline-block;
-    gap: 10%;
+    gap: 2.5%;
   }
   
   .carte {
@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid var(--current-border);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -18,8 +18,9 @@
     text-align: center;
     background: var(--diagonal-gradient-reverse);
     cursor: pointer;
-    transition: transform 0.3s ease, transition 0.3s ease;
+    transition: transform 0.3s ease;
     z-index: 1;
+    overflow: hidden;
   }
   
   .carte:hover {
@@ -27,14 +28,20 @@
   }
   
   .nom {
+    height: 35%;
     font-size: 0.7em;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
   }
   
   .image {
-    max-width: 70%;
-    max-height: 70%;
-    margin-bottom: auto;
+    height: 60%;
+    padding: 2.5%;
+    width: auto;
+    object-fit: contain;
   }
   
   .description-box {
@@ -61,6 +68,14 @@
       width: 60px;
       height: 80px;
     }
+    .nom {
+      font-size: 0.6em;
+      height: 50%;
+    }
+    .image {
+      
+      height: 40%;
+    }
     .description-box {
       font-size: 0.6em;
       padding: 6px;
@@ -72,8 +87,16 @@
       width: 50px;
       height: 70px;
     }
-    .description-box {
+    .nom {
       font-size: 0.6em;
+      height: 50%;
+    }
+    .image {
+      
+      height: 40%;
+    }
+    .description-box {
+      font-size: 0.5em;
       padding: 5px;
     }
   }
