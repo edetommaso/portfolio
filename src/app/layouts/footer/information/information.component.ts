@@ -11,4 +11,7 @@ export class InformationComponent {
   année: number = new Date().getFullYear();
   entreprise:string = "DE TOMMASO Eric";
   info: string = `© ${this.année} ${this.entreprise}. Tous droits réservés.`;
+
+  deniereModif: string = "mai 2025";
+  miseAJour: string = `Dernière mise à jour : ${this.deniereModif}`;
 }

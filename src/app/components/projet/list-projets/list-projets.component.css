@@ -1,0 +1,68 @@
+.liste-carte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    gap: 2rem;
+}
+
+.projet-carte {
+    background: var(--diagonal-gradient);
+    text-align: center;
+    border: 2px solid var(--current-border);
+    border-radius: 25px;
+    padding: 1.2em;
+    width: 48%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.projet-carte:hover {
+    transform: translateY(-15px);
+}
+
+.projet-carte h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.description p {
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+
+.image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+h5 {
+    color: var(--current-text);
+    font-size: 1em;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* Media Query pour mobile */
+@media (max-width: 768px) {
+    .liste-carte {
+        width: 95%;
+        gap: 1rem;
+    }
+    
+    .projet-carte {
+        width: 100%;
+        padding: 1rem;
+    }
+}

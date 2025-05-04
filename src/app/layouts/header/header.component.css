@@ -1,7 +1,13 @@
 header {
-    width: auto;
-    padding: 2.5%;
-    height: 4em;
-
-}
-
+    width: 100%;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Optionnel : ajuste le padding sur mobile */
+  @media (max-width: 768px) {
+    header {
+      padding: 1rem 0.5rem;
+    }
+  }
+  

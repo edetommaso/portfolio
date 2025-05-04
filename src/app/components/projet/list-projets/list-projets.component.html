@@ -1,0 +1,25 @@
+<div class="liste-carte">   
+    @for (projet of projets; track $index) {
+        <div class="projet-carte" [routerLink]="['/projet',$index]" routerLinkActive="active">
+            <h3>{{ projet.nom }}</h3>
+            <div class="info">
+                <p>Date : {{projet.date}} | Durée du projet : {{projet.duree}} </p>
+            </div>
+            <div class="description">
+                <p>{{ projet.description[0] }}</p>
+            
+            </div>
+            
+            @if (projet.image.length) {
+                <img [src]="projet.image[0]" class="image">
+            }
+            
+            @if (projet.technologie.length) {
+                <app-list-competences [competences]="projet.technologie" titre="Technologies utilisées" class="technologies"></app-list-competences>
+            }@else {
+                <p class="technologies">Aucune technologie utilisée</p>
+            }
+        </div>
+    }
+    
+</div>

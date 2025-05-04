@@ -5,7 +5,7 @@
   
   h1 {
     font-size: 2em;
-    color: white;
+    color: var(--current-text);
   }
   
   p {
@@ -15,16 +15,15 @@
   
   a {
     font-size: 1.2em;
-    color: white;
+    color: var(--current-text);
     text-decoration: none;
-    border: 1px solid grey;
+    border: 1px solid var(--current-border);
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: grey;
+    background-color: var(--current-bg);
   }
   
   a:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--current-alt-bg);
   }
   

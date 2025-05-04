@@ -1,0 +1,15 @@
+<div class="contenue">
+    <div class="image">
+        @if (aPropos?.photo != null || aPropos?.photo != undefined) {
+            <img class="photo" src="{{aPropos?.photo}}" alt="Photo de {{aPropos?.nom}} {{aPropos?.prenom}}">
+        }
+        
+    </div>
+    <div class="information">
+        <h3>{{aPropos?.nom}} {{aPropos?.prenom}}</h3>
+        <p>{{aPropos?.age}} ans</p>
+        <p>{{aPropos?.localisation}}</p>
+        <p>{{aPropos?.description}}</p>
+    
+    </div>
+</div>

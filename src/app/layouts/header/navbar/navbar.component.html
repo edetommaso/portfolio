@@ -1,10 +1,25 @@
 <nav class="navbar">
-    <h3 class="navbar-title">{{ titre }}</h3>
-    
-    <div class="nav-menu">
-      @for (lien of menus; track $index) {
-        <a [routerLink]="lien.route" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">{{ lien.label }}</a>
-      }
-    </div>
-</nav>
+  <h3 class="navbar-title">{{ titre }}</h3>
+
   
+
+ 
+
+  <!-- Menu de navigation -->
+  <div class="nav-menu" [class.show]="menuOuvert">
+    @for (lien of menus; track $index) {
+      <a [routerLink]="lien.route"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact: true }"
+         class="nav-link">{{ lien.label }}</a>
+    }
+  </div>
+
+  <div class="navbar-actions">
+    <app-bouton-burger (toggle)="menuOuvert = !menuOuvert" class="menu-toggle" [class.active]="menuOuvert"></app-bouton-burger>
+    <app-bouton-theme />
+  </div>
+  
+  
+
+</nav>

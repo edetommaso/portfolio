@@ -4,9 +4,8 @@ export interface Competence {
     image: string;
 }
 
-export interface Hobbie {
+export interface Loisir {
     nom: string;
-    description: string;
     image: string;
 }
 
@@ -20,16 +19,28 @@ export interface Projet {
     video: string;
 }
 
-export interface Experience {
-    poste: string;
-    date: string;
-    entreprise: string;
+export interface APropos {
+    nom: string;
+    prenom: string;
+    age: number;
     localisation: string;
+    photo: string | null;
     description: string;
 }
+
+export interface Experience {
+    poste: string;
+    dateDebut: string;
+    dateFin: string | null;
+    entreprise: string;
+    localisation: string;
+    descriptionPoste: string;
+}
+
 export interface Formation {
     nom: string;
-    date: string;
+    dateDebut: string;
+    dateFin: string | null;
     etablissement: string;
     localisation: string;
     description: string;

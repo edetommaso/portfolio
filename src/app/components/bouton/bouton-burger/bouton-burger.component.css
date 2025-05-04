@@ -1,0 +1,25 @@
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+    gap: 5px;
+    transition: transform 0.5s ease;
+  }
+  
+  .menu-toggle span {
+    width: 24px;
+    height: 3px;
+    background-color: var(--current-text);
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Rotation et couleur quand le bouton est actif */
+  .menu-toggle.active {
+    transform: rotate(90deg);
+  }
+  
+  

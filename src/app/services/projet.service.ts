@@ -6,13 +6,13 @@ import { Projet } from '../models/atttributs';
   providedIn: 'root'
 })
 export class ProjetService {
-
+  
   private projets = projets;
-
+  
   getProjets() {
     return this.projets;
   }
-
+  
   getProjetById(id: number): Projet | undefined {
     return this.projets[id] ?? null;
   }

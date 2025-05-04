@@ -12,9 +12,9 @@ export const projets: Projet[] = [
         ],
         technologie: [competences.java, competences.junit, competences.intellij, competences.trello],
         image: [
-            '/assets/projets/1/tetris.png',
-            '/assets/projets/1/tetris-1.png',
-            '/assets/projets/1/tetris-2.png',
+            'assets/projets/1/tetris.png',
+            'assets/projets/1/tetris-1.png',
+            'assets/projets/1/tetris-2.png',
         ],
         date: 'Novembre 2023',
         duree: '2 mois',
@@ -42,13 +42,13 @@ export const projets: Projet[] = [
         ],
         technologie: [competences.java,competences.javafx, competences.sceneBuilder, competences.tiled, competences.junit, competences.intellij, competences.trello, competences.github],
         image: [
-            '/assets/projets/3/zelda.png',
-            '/assets/projets/3/zelda-1.png',
-            '/assets/projets/3/zelda-2.png',
+            'assets/projets/3/zelda.png',
+            'assets/projets/3/zelda-1.png',
+            'assets/projets/3/zelda-2.png',
         ],
         date: 'Mars 2024',
         duree: '3 mois',
-        video: '/assets/projets/3/zelda.mp4'
+        video: 'assets/projets/3/zelda.mp4'
     },
     
     {
@@ -61,13 +61,13 @@ export const projets: Projet[] = [
         ],
         technologie: [competences.flutter,competences.dart, competences.mysql,competences.php,competences.androidstudio, competences.vscode, competences.trello, competences.github],
         image: [
-            '/assets/projets/4/lol_clicker.png',
-            '/assets/projets/4/lol_clicker-1.png',
-            '/assets/projets/4/lol_clicker-2.png',
+            'assets/projets/4/lol_clicker.png',
+            'assets/projets/4/lol_clicker-1.png',
+            'assets/projets/4/lol_clicker-2.png',
         ],
         date: 'Fevrier 2025',
         duree: '1 mois',
-        video: '/assets/projets/4/lol_clicker.mp4'
+        video: 'assets/projets/4/lol_clicker.mp4'
     },
     
     {
@@ -79,9 +79,9 @@ export const projets: Projet[] = [
         ],
         technologie: [competences.python, competences.flask, competences.angular, competences.typescript, competences.html, competences.css,competences.phpmyadmin, competences.mysql, competences.vscode, competences.pycharm, competences.trello, competences.github],
         image: [
-            '/assets/projets/5/musee.png',
-            '/assets/projets/5/musee-1.png',
-            '/assets/projets/5/musee-2.png',
+            'assets/projets/5/musee.png',
+            'assets/projets/5/musee-1.png',
+            'assets/projets/5/musee-2.png',
         ],
         date: 'Mars 2025',
         duree: '1 mois',

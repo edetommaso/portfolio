@@ -1,0 +1,13 @@
+.apropos {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    padding: 1.5% 0%;
+}
+
+h2 {
+    align-items: center;
+    margin: auto;
+}

@@ -1,0 +1,16 @@
+.theme-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .theme-toggle img {
+    padding-top: 0.4em;
+    width: 2.5em;
+    transition: transform 0.5s;
+  }
+  
+  .theme-toggle:hover img {
+    transform: scale(1.3);
+  }
