@@ -11,14 +11,6 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "deploy": {
-            "builder": "angular-cli-ghpages:deploy",
-            "options": {
-              "dir": "dist/portfolio/browser",
-              "branch": "gh-pages",
-              "message": "Deploy Angular app to GitHub Pages"
-            }
-          },
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "baseHref": "/portfolio/",
@@ -62,6 +54,14 @@
             }
           },
           "defaultConfiguration": "production"
+        },
+        "deploy": {
+            "builder": "angular-cli-ghpages:deploy",
+            "options": {
+              "dir": "dist/portfolio/browser",
+              "branch": "gh-pages",
+              "message": "Deploy Angular app to GitHub Pages"
+            }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
