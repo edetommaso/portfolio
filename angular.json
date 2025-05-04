@@ -14,8 +14,9 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "baseHref": "/portfolio/",
-            "deployUrl": "/portfolio/",
+            "deployUrl": "/",
             "outputPath": "dist/portfolio",
+            "deleteOutputPath": true,
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
